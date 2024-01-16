@@ -1,0 +1,25 @@
+name = "NMRModelManager"
+uuid = "a22e58ba-bfe9-4b23-8243-f95bbc5f8cc0"
+authors = ["Roy Chih Chung Wang"]
+version = "0.7.3"
+
+[deps]
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+NMRDataSetup = "ebb73dff-5abd-42b1-a10e-869024f50034"
+NMRSignalSimulator = "5a515ddf-a3f2-4a7d-82cc-71ac3f3f244b"
+NMRSpecifyRegions = "2c6f6ba7-1a3c-4d31-8511-d336c09a6ae6"
+OSQP = "ab2f91bb-94b4-55e3-9ba0-7f65df51de79"
+Serialization = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+
+[extras]
+FiniteDifferences = "26cc04aa-876d-5657-8c51-4c34ba976000"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+PublicationDatasets = "17766f69-17be-4aec-8093-a6905606c372"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "Random", "PublicationDatasets", "FiniteDifferences", "LinearAlgebra"]
